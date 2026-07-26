@@ -393,32 +393,21 @@ main{
 }
 
 .slider-dots{
-    position:absolute;
-    bottom:15px;
-    left:50%;
-    transform:translateX(-50%);
-    display:flex;
-    gap:8px;
-    z-index:10;
-    background:rgba(0,0,0,0.3);
-    padding:6px 12px;
-    border-radius:20px;
-    backdrop-filter:blur(4px);
+    margin-top:15px;
+    text-align:center;
 }
 
 .dot{
     display:inline-block;
     width:12px;
     height:12px;
-    background:rgba(255,255,255,0.6);
+    margin:0 5px;
+    background:#ccc;
     border-radius:50%;
     cursor:pointer;
-    transition:background 0.3s, transform 0.3s;
+    transition:background 0.3s ease;
 }
 
-.dot.active,
-.dot:hover{
-    background:#ffffff;
-    transform:scale(1.3);
-    box-shadow:0 0 8px rgba(255,255,255,0.8);
+.dot.active{
+    background:#333;
 }
