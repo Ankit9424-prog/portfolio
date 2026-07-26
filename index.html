@@ -3,152 +3,247 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal portfolio of Ankit Katwal, an Information Technology student showcasing projects and technical skills.">
-    <title>Ankit Katwal - Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Ankit Katwal | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <div class="header-brand">
-            <img src="logo.png" alt="MIT Logo" id="header-logo" width="150" height="70">
+<header>
+
+    <div class="logo">
+        <img src="images/logo.png" alt="MIT Logo">
+
+        <div>
             <h1>Ankit Katwal</h1>
+            <p>Information Technology Student</p>
         </div>
-        <div class="header-right">
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <form action="#" method="get" class="search-form">
-                <input type="search" id="search" name="q" placeholder="Search...">
-            </form>
+    </div>
+
+    <nav>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <form class="search-box">
+        <input type="search" placeholder="Search...">
+        <button type="submit">Search</button>
+    </form>
+
+</header>
+
+<section id="slider" class="slider">
+
+    <button class="prev">&#10094;</button>
+
+    <div class="slider-container">
+        <div class="slider-track">
+            <img src="images/download.jpg" alt="Slide 1" class="slide">
+            <img src="images/download2.jpg" alt="Slide 2" class="slide">
+            <img src="images/down.jpg" alt="Slide 3" class="slide">
         </div>
-    </header>
+    </div>
 
-    <main>
+    <button class="next">&#10095;</button>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <img src="profile.jpg" alt="Ankit Katwal, Information Technology student" width="200" height="200">
-            <p>
-                Hi, I am Ankit Katwal from Nepal, currently studying Information Technology
-                at International American University. I got into programming through Python and
-                have since picked up web development with HTML, CSS, and JavaScript. I like
-                building things that actually work and solve practical problems. When I am not
-                doing coursework, I usually spend time experimenting with small coding projects
-                or reading up on new tools and frameworks.
-            </p>
-        </section>
+    <div class="slider-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
 
-        <section id="skills">
-            <h2>Technical Skills</h2>
-            <dl>
-                <dt>Languages</dt>
-                <dd>Python, Java, C</dd>
+</section>
 
-                <dt>Web Development</dt>
-                <dd>HTML5, CSS3, JavaScript</dd>
+<main>
 
-                <dt>Back-End</dt>
-                <dd>Flask, REST API Design</dd>
+<section id="about" class="card">
 
-                <dt>Databases</dt>
-                <dd>PostgreSQL, MySQL</dd>
+    <img src="images/profile.jpg" alt="Profile Photo">
 
-                <dt>Version Control</dt>
-                <dd>Git, GitHub</dd>
+    <div>
 
-                <dt>Tools</dt>
-                <dd>VS Code, Postman, npm</dd>
-            </dl>
-        </section>
+        <h2>About Me</h2>
 
-        <section id="education">
-            <h2>Education</h2>
-            <h3>Bachelor of Information Technology</h3>
-            <p>Model Institute of Technology, Kathmandu</p>
-            <p>Expected Graduation: 2028</p>
-            <ul>
-                <li>Relevant Coursework: Web Design and Development, Database Management Systems, Data Structures, Object-Oriented Programming</li>
-            </ul>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-
-            <article>
-                <h3>Student Management System</h3>
-                <p>
-                    A Python application for managing student records including enrollment,
-                    grades, and course registration. Uses a MySQL database to store student
-                    data and provides a simple interface for adding, updating, searching,
-                    and deleting student information.
-                </p>
-            </article>
-
-            <article>
-                <h3>Library Management System</h3>
-                <p>
-                    A console-based application that tracks books, members, and borrowing
-                    records for a small library. Built with Python and PostgreSQL, it supports
-                    book checkout and return workflows, overdue tracking, and basic search
-                    functionality by title or author.
-                </p>
-            </article>
-
-            <article>
-                <h3>Personal Portfolio Website</h3>
-                <p>
-                    This portfolio page, built with strictly semantic HTML5 for the CSE 230
-                    Web Design and Development course. Demonstrates proper use of semantic
-                    elements, accessible form inputs, and W3C-validated markup with zero
-                    errors.
-                </p>
-            </article>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form action="#" method="post">
-
-                <p>
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name" required>
-                </p>
-
-                <p>
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" required>
-                </p>
-
-                <p>
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="6" cols="40" required></textarea>
-                </p>
-
-                <p>
-                    <button type="submit">Send Message</button>
-                </p>
-
-            </form>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>Contact: <a href="mailto:ankitkatwal045@gmail.com">ankitkatwal045@gmail.com</a></p>
         <p>
-            <a href="https://ankitkatwal.name.np" target="_blank" rel="noopener noreferrer">Website</a> |
-            <a href="https://github.com/Ankit9424-prog" target="_blank" rel="noopener noreferrer">GitHub</a> |
-            <a href="https://www.linkedin.com/in/ankit-katwal-b4635a33b" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            Hello! I am <strong>Ankit Katwal</strong> from Nepal.
+            I am currently pursuing a Bachelor's degree in Information
+            Technology at Model Institute of Technology.
         </p>
-        <p>&copy; 2026 Ankit Katwal. All rights reserved.</p>
-    </footer>
+
+        <p>
+            I enjoy programming, Artificial Intelligence,
+            Machine Learning, Web Development and solving
+            real-world problems through technology.
+        </p>
+
+    </div>
+
+</section>
+
+<section id="skills" class="card">
+
+<h2>Technical Skills</h2>
+
+<div class="skills">
+
+<div class="skill-box">
+<h3>Languages</h3>
+<p>Python, Java, C</p>
+</div>
+
+<div class="skill-box">
+<h3>Web</h3>
+<p>HTML5, CSS3, JavaScript</p>
+</div>
+
+<div class="skill-box">
+<h3>Database</h3>
+<p>MySQL, PostgreSQL</p>
+</div>
+
+<div class="skill-box">
+<h3>Tools</h3>
+<p>Git, GitHub, VS Code, Postman</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="education" class="card">
+
+<h2>Education</h2>
+
+<div class="edu">
+
+<h3>Bachelor of Information Technology</h3>
+
+<p>
+Model Institute of Technology<br>
+Kathmandu, Nepal
+</p>
+
+<p>
+Expected Graduation: 2028
+</p>
+
+<ul>
+
+<li>Web Design and Development</li>
+
+<li>Database Management Systems</li>
+
+<li>Object-Oriented Programming</li>
+
+<li>Data Structures</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section id="projects" class="card">
+
+<h2>Projects</h2>
+
+<div class="project">
+
+<h3>Student Management System</h3>
+
+<p>
+Python application for managing students,
+enrollment and grades using MySQL.
+</p>
+
+</div>
+
+<div class="project">
+
+<h3>Library Management System</h3>
+
+<p>
+Tracks books, borrowing records,
+returns and overdue reports.
+</p>
+
+</div>
+
+<div class="project">
+
+<h3>Personal Portfolio Website</h3>
+
+<p>
+Responsive portfolio built with HTML5 and CSS3
+following semantic web standards.
+</p>
+
+</div>
+
+</section>
+
+<section id="contact" class="card">
+
+<h2>Contact Me</h2>
+
+<form>
+
+<label>Name</label>
+<input type="text" required>
+
+<label>Email</label>
+<input type="email" required>
+
+<label>Message</label>
+<textarea rows="6" required></textarea>
+
+<button type="submit">
+Send Message
+</button>
+
+</form>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+Email :
+<a href="mailto:ankitkatwal045@gmail.com">
+ankitkatwal045@gmail.com
+</a>
+</p>
+
+<p>
+Website :
+<a href="https://ankitkatwal.name.np">
+ankitkatwal.name.np
+</a>
+</p>
+
+<p>
+GitHub :
+<a href="https://github.com/Ankit9424-prog">
+Ankit9424-prog
+</a>
+</p>
+
+<p>
+© 2026 Ankit Katwal
+</p>
+
+</footer>
+
+<script src="slider.js"></script>
 
 </body>
 </html>
